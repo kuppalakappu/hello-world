@@ -1,0 +1,35 @@
+
+
+<p>{{name}}</p>
+<input type = "text" #myinput [disabled]="isdisabled" value = "hello">
+<input type= "text" [(ngModel)]= "msg">
+{{msg}}
+
+<p class="success">welcometocss</p>
+
+<p [ngClass]="messageclass">welcometocss</p>
+
+<p [ngStyle]="messagestyle">welcometohtml</p>
+
+<button (click)='submit()'>submit</button>{{greeting}}
+<button (click)='log(myinput.value)'>submit</button>{{greeting}}
+
+
+<p *ngIf = "show; else hello"> helloworld </p>
+
+<p *ngFor = "let p of products" > {{p.name}} </p>
+<ng-template #hello>hello india 2024</ng-template>
+
+<div [ngSwitch] ="color">   
+    <p *ngSwitchCase = "'red'">red color</p> 
+    <p *ngSwitchCase = "'green'">green color</p> 
+</div>
+
+<p *ngFor = "let e of emplist" > {{e.name}} </p>
+
+<p>{{error}}</p>
+
+<app-parentchild [a]="color"></app-parentchild>
+
+
+<a href ="https://www.youtube.com/watch?v=RkV_LozGP3w">facebook</a>
